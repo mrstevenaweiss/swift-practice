@@ -15,6 +15,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Welcome to My First App")
+                .fontWeight(.semibold)
                 .foregroundColor(Color.green)
             Button(action: {
                 print("pressed")
