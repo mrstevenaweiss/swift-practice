@@ -2,6 +2,8 @@
 
 This is the repo to practice Ray W's class
 
+------------------
+SWIFT UI
 
 Portrait v Landscape
 896 x 414 points in Portrait
@@ -29,8 +31,17 @@ a sequence of characters.  interpolation \() (JS --> ${}
 VARIABLES & DATA TYPES
 var variableName : Type (Bool, Double, etc) = InitialValue (an intial value) (@State is optional)
 
-WRITING METHODS
+------------------
+SWIFT BASICS
 
+SWIFT STANDARD LIBRARY
+Shift + Command + 0 
+
+WRITING METHODS
+func someFunctionName() -> ReturnType { 
+	// code body here... 
+	return someObject
+}
 
 CONDITIONAL STATEMENTS
 
