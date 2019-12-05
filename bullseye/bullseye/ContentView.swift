@@ -10,9 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var alertIsVisible: Bool = false
-    @State var sliderValue: Double = 50.0
-    @State var target: Int = Int.random(in: 1...100)
+    @State var alertIsVisible = false
+    @State var sliderValue = 50.0
+    @State var target = Int.random(in: 1...100)
+    @State var totalScore = 0
+    @State var round = 1
 
     var body: some View {
         
@@ -21,7 +23,7 @@ struct ContentView: View {
             
             // Target row
             HStack {
-                Text("Put the bulleyes as close as you can to:")
+                Text("Put the bulleyes as close as you can to :")
                 Text("\(self.target)")
             }
             Spacer()
@@ -38,16 +40,21 @@ struct ContentView: View {
             Button(action: {
                 print("pressed")
                 self.alertIsVisible = true
+                
             }) {
                 Text("Hit Me!")
             }
             .alert(isPresented: $alertIsVisible) { () ->
                 Alert in
-                var roundedValue : Int = Int(self.sliderValue.rounded())
+                let roundedValue = Int(self.sliderValue.rounded())
                 return Alert(title: Text("Hello there!"),
                              message: Text("The slider's value is \(roundedValue).\n" + "You scored \(self.pointsForCurrentRound()) points this round."
                     ),
-                             dismissButton: .default(Text("Awesome!")))
+                             dismissButton: .default(Text("Awesome!")) {
+                                self.totalScore = self.totalScore + self.pointsForCurrentRound()
+                                self.target = Int.random(in: 1...100)
+                                self.round = self.round + 1
+                    })
                 }
             Spacer()
             
@@ -58,10 +65,10 @@ struct ContentView: View {
                 }
                 Spacer()
                 Text("Score")
-                Text("99999")
+                Text("\(totalScore)")
                 Spacer()
                 Text("Round:")
-                Text("999")
+                Text("\(round)")
                 Spacer()
                 Button(action: { print("Info") }){
                     Text("Info")
@@ -70,7 +77,7 @@ struct ContentView: View {
         }
     }
     func pointsForCurrentRound() -> Int {
-        return 999
+        return abs(Int(self.sliderValue.rounded()) - self.target)
     }
 }
 

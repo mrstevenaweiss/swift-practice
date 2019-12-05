@@ -43,10 +43,16 @@ func someFunctionName() -> ReturnType {
 	return someObject
 }
 
-CONDITIONAL STATEMENTS
-
 VAR v CONSTANTS
+var creates a variable (if it could change)
+let is a constant
+if a value won't change, make it a let
 
 TYPE INFERENCE
+better to not specify the type (delete : Type). To check, hit Option and Click over the variable
 
 VARIABLE SCOPE
+DRY -- Don't Repeat Yourself
+
+
+
