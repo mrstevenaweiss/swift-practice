@@ -54,5 +54,10 @@ better to not specify the type (delete : Type). To check, hit Option and Click o
 VARIABLE SCOPE
 DRY -- Don't Repeat Yourself
 
+IMAGES
+1x iOS 9 or older
+2x 100x100 most iPhones, retinas screens
+3x 150X150 super high red retina HD
 
-
+VIEWMODIFIER
+must follow a particular syntax to fulfill that promise
