@@ -14,12 +14,20 @@ struct ContentView: View {
     @State var target = Int.random(in: 1...100)
     @State var totalScore = 0
     @State var round = 1
-
+    
+    struct Shadow : ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+            .shadow(color: Color.black, radius: 5, x: 2, y: 2)
+        }
+    }
+    
+    
     struct LableStyle : ViewModifier {
         func body(content: Content) -> some View {
             return content
             .foregroundColor(Color.white)
-            .shadow(color: Color.black, radius: 5, x: 2, y: 2)
+            .modifier(Shadow())
             .font(Font.custom("Arial Rounded MT Bold", size:18))
         }
     }
@@ -28,8 +36,24 @@ struct ContentView: View {
         func body(content: Content) -> some View {
             return content
             .foregroundColor(Color.yellow)
-            .shadow(color: Color.black, radius: 5, x: 2, y: 2)
+            .modifier(Shadow())
             .font(Font.custom("Arial Rounded MT Bold", size:24))
+        }
+    }
+    
+    struct SmallLetterStyle : ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+            .foregroundColor(Color.black)
+            .font(Font.custom("Arial Rounded MT Bold", size:12))
+        }
+    }
+    
+    struct BigLetterStyle : ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+            .foregroundColor(Color.black)
+            .font(Font.custom("Arial Rounded MT Bold", size:18))
         }
     }
     
@@ -55,9 +79,7 @@ struct ContentView: View {
             
             // Button row
             Button(action: {
-                print("pressed")
                 self.alertIsVisible = true
-                
             }) {
                 Text("Hit Me!")
             }
@@ -71,33 +93,37 @@ struct ContentView: View {
                                 self.totalScore = self.totalScore + self.pointsForCurrentRound()
                                 self.target = Int.random(in: 1...100)
                                 self.round = self.round + 1
-                                
                     })
-                }
+                }.background(Image("Button"), alignment: .center).modifier(Shadow()).modifier(BigLetterStyle())
             Spacer()
             
             // Score row
             HStack {
-                Button(action:{
-                    self.startOver()
-                }) {
+                
+                Button(action: { self.startOver() }){
+                    Image("StartOverIcon")
                     Text("Start Over!")
-                }
+                }.background(Image("Button"), alignment: .center).modifier(Shadow()).modifier(SmallLetterStyle())
                 Spacer()
+                
                 Text("Score").modifier(LableStyle())
                 Text("\(totalScore)").modifier(ValueStyle())
                 Spacer()
+                
                 Text("Round:").modifier(LableStyle())
                 Text("\(round)").modifier(ValueStyle())
                 Spacer()
-                Button(action: { print("Info") }){
-                    Text("Info")
-                }
+                
+                NavigationLink(destination: AboutView()){
+                    HStack {
+                        Image("InfoIcon")
+                        Text("Info")
+                    }
+                }.background(Image("Button"), alignment: .center).modifier(Shadow()).modifier(SmallLetterStyle())
+                
             }.padding(.bottom, 20)
         }.background(Image("Background"), alignment: .center)
-//        func background<Background>(_ background: Background, alignment: Alignment = .center) -> some View where Background : View
-        
-        
+        .navigationBarTitle("Bullseye")
     }
     func pointsForCurrentRound() -> Int {
         return abs(Int(self.sliderValue.rounded()) - self.target)
@@ -129,6 +155,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().previewLayout(.fixed(width: 896, height: 414))
     }
 }

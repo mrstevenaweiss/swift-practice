@@ -13,6 +13,7 @@
 		FA58FEB92388E41900EF203A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA58FEB82388E41900EF203A /* Assets.xcassets */; };
 		FA58FEBC2388E41900EF203A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA58FEBB2388E41900EF203A /* Preview Assets.xcassets */; };
 		FA58FEBF2388E41900EF203A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA58FEBD2388E41900EF203A /* LaunchScreen.storyboard */; };
+		FA66CB7B239D8046000E7477 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66CB7A239D8046000E7477 /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FA58FEBB2388E41900EF203A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA58FEBE2388E41900EF203A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA58FEC02388E41900EF203A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA66CB7A239D8046000E7477 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				FA58FEB22388E41800EF203A /* AppDelegate.swift */,
 				FA58FEB42388E41800EF203A /* SceneDelegate.swift */,
 				FA58FEB62388E41800EF203A /* ContentView.swift */,
+				FA66CB7A239D8046000E7477 /* AboutView.swift */,
 				FA58FEB82388E41900EF203A /* Assets.xcassets */,
 				FA58FEBD2388E41900EF203A /* LaunchScreen.storyboard */,
 				FA58FEC02388E41900EF203A /* Info.plist */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA66CB7B239D8046000E7477 /* AboutView.swift in Sources */,
 				FA58FEB32388E41800EF203A /* AppDelegate.swift in Sources */,
 				FA58FEB52388E41800EF203A /* SceneDelegate.swift in Sources */,
 				FA58FEB72388E41800EF203A /* ContentView.swift in Sources */,

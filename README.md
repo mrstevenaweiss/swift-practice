@@ -61,3 +61,16 @@ IMAGES
 
 VIEWMODIFIER
 must follow a particular syntax to fulfill that promise
+
+NEW VIEW
+new >> file
+
+SCENE DELEGATE
+responsible for the app starting up
+
+PUTTING IT ON YOUR PHONE
+appleID + xcode
+build and run
+connect your phone to the Mac
+Window >> Devices & Simulators >> 
+unlock device and hold the home button
