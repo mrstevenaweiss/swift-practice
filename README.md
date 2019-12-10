@@ -73,4 +73,7 @@ appleID + xcode
 build and run
 connect your phone to the Mac
 Window >> Devices & Simulators >> 
-unlock device and hold the home button
+unlock device and hold the home butto
+
+
+n
