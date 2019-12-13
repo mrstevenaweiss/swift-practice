@@ -1,4 +1,4 @@
-# swift-practice
+swift-practice
 
 This is the repo to practice Ray W's class
 
@@ -76,4 +76,15 @@ Window >> Devices & Simulators >>
 unlock device and hold the home butto
 
 
-n
+OPTIONALS
+Optionals need the type to be declared
+var number: Int? = 10
+optionals needs to unwrapped
+use a ! to FORCE unwrap, but this is dangerous practice
+use optional binding
+
+if let aName = another { } else 
+(this means if aName is not equal to NIL, do something...)
+
+can also use NIL coalescing
+
