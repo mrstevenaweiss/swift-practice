@@ -88,3 +88,49 @@ if let aName = another { } else
 
 can also use NIL coalescing
 
+SETS
+var someSet: Set<Int> (must be explicit, swift ignores duplicate values
+sets are unordered)
+
+TYPES
+Name Types v Compound Types
+Compound types are defined by the other types (name or compound)
+Tuple is a compound type
+Function is a compound type
+Name types -- classes, structures, protocols, 
+
+We can talk about types based on storage/how they are copied
+
+typealises
+
+STRUCTURES: allow you to group stuff together (sort like a class in other langauges i.e. properties, methods)
+mutations need to be explicit
+
+instance of a struct is a value
+structures copy their value when used in a new place
+
+CLASSES
+reference types
+share their data
+objects with identity
+
+---------------
+
+SECOND APP 
+creating a copyright
+1. IDETemplateMacros.plist
+2. ProjectName.xcodeproj
+3. Right Click --> Show Package Contents or cd
+4. mkdir inside current dir xcshareddata
+5. copy IDETemplateMacros.plist into xcshareddata
+6. you shoul seee in "new file"
+
+
+DATA MODEL
+
+
+
+MODELS
+
+
+
