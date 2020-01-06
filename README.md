@@ -125,12 +125,23 @@ creating a copyright
 5. copy IDETemplateMacros.plist into xcshareddata
 6. you shoul seee in "new file"
 
-
-DATA MODEL
-
-
-
 MODELS
+structuring code to represent real-world concepts
 
+we can see that state vars act as a data model, but we can also use files to organize data
+
+organize files using "groups"
+
+we have individual items as a model AND a place to store the tasks, also requiring a model
+
+LISTVIEW
+show list of an array
+
+UUID (universally unique idenfier)
+import Foundation to bring in ID
+
+
+PROTOCOLS
+requirements
 
 

@@ -9,8 +9,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    var taskStore = TaskStore()
+    
     var body: some View {
-        Text("Hello, World!")
+//        List(taskStore.tasks.indices) { index in
+//            Text( self.taskStore.tasks[index].name )
+//        }
+        List(taskStore.tasks, id: \.id) { task in
+            Text(task.name)
+        }
     }
 }
 

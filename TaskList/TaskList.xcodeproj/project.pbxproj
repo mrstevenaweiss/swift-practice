@@ -14,6 +14,7 @@
 		FAB0562E23A7388D003294C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB0562D23A7388D003294C6 /* Preview Assets.xcassets */; };
 		FAB0563123A7388D003294C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB0562F23A7388D003294C6 /* LaunchScreen.storyboard */; };
 		FAB0563923A73BB1003294C6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0563823A73BB1003294C6 /* Task.swift */; };
+		FAC45E4823C2A9CA00108CDA /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC45E4723C2A9CA00108CDA /* TaskStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FAB0563023A7388D003294C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB0563223A7388D003294C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB0563823A73BB1003294C6 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FAC45E4723C2A9CA00108CDA /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +44,6 @@
 		FAB0561823A7388B003294C6 = {
 			isa = PBXGroup;
 			children = (
-				FAB0563823A73BB1003294C6 /* Task.swift */,
 				FAB0562323A7388B003294C6 /* TaskList */,
 				FAB0562223A7388B003294C6 /* Products */,
 			);
@@ -62,6 +63,7 @@
 				FAB0562423A7388B003294C6 /* AppDelegate.swift */,
 				FAB0562623A7388B003294C6 /* SceneDelegate.swift */,
 				FAB0562823A7388B003294C6 /* ContentView.swift */,
+				FAC45E4623C2A92A00108CDA /* Models */,
 				FAB0562A23A7388D003294C6 /* Assets.xcassets */,
 				FAB0562F23A7388D003294C6 /* LaunchScreen.storyboard */,
 				FAB0563223A7388D003294C6 /* Info.plist */,
@@ -76,6 +78,15 @@
 				FAB0562D23A7388D003294C6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAC45E4623C2A92A00108CDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0563823A73BB1003294C6 /* Task.swift */,
+				FAC45E4723C2A9CA00108CDA /* TaskStore.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC45E4823C2A9CA00108CDA /* TaskStore.swift in Sources */,
 				FAB0563923A73BB1003294C6 /* Task.swift in Sources */,
 				FAB0562523A7388B003294C6 /* AppDelegate.swift in Sources */,
 				FAB0562723A7388B003294C6 /* SceneDelegate.swift in Sources */,
