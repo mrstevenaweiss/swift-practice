@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA37132E23C4379E001AD68D /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37132D23C4379E001AD68D /* NewTaskView.swift */; };
 		FAB0562523A7388B003294C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0562423A7388B003294C6 /* AppDelegate.swift */; };
 		FAB0562723A7388B003294C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0562623A7388B003294C6 /* SceneDelegate.swift */; };
 		FAB0562923A7388B003294C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0562823A7388B003294C6 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA37132D23C4379E001AD68D /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
 		FAB0562123A7388B003294C6 /* TaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB0562423A7388B003294C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB0562623A7388B003294C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA37132F23C437CA001AD68D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA37132D23C4379E001AD68D /* NewTaskView.swift */,
+				FAB0562823A7388B003294C6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FAB0561823A7388B003294C6 = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +73,7 @@
 			children = (
 				FAB0562423A7388B003294C6 /* AppDelegate.swift */,
 				FAB0562623A7388B003294C6 /* SceneDelegate.swift */,
-				FAB0562823A7388B003294C6 /* ContentView.swift */,
+				FA37132F23C437CA001AD68D /* Views */,
 				FAC45E4623C2A92A00108CDA /* Models */,
 				FAB0562A23A7388D003294C6 /* Assets.xcassets */,
 				FAB0562F23A7388D003294C6 /* LaunchScreen.storyboard */,
@@ -162,6 +173,7 @@
 			files = (
 				FAC45E4823C2A9CA00108CDA /* TaskStore.swift in Sources */,
 				FAB0563923A73BB1003294C6 /* Task.swift in Sources */,
+				FA37132E23C4379E001AD68D /* NewTaskView.swift in Sources */,
 				FAB0562523A7388B003294C6 /* AppDelegate.swift in Sources */,
 				FAB0562723A7388B003294C6 /* SceneDelegate.swift in Sources */,
 				FAB0562923A7388B003294C6 /* ContentView.swift in Sources */,
