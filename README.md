@@ -2,6 +2,21 @@ swift-practice
 
 This is the repo to practice Ray W's class
 
+-----------------
+KEY COMMANDS
+
+RUN cmd+r
+NAVIGATOR cmd+0, cmd+1,2,3,4
+RIGHTMOST cmd+option+0, cmd+option+1,2,3,4
+CONSOLE cmd+shift+y 
+ASSISTANT EDITOR cmd+option+Enter (change "Focused" editor in Preferences)
+MARK will leave a marker
+INDENT ctrl+i
+
+-----------------
+DEBUGGING
+Look at stack trace, go to the top
+
 ------------------
 SWIFT UI
 
@@ -145,4 +160,9 @@ PROTOCOLS
 requirements
 
 DEPENDENCY INJECTION
+
+
+
+XCODE KEYCOMMANDS
+
 
