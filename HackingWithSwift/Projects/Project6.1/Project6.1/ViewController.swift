@@ -15,8 +15,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addToList))
-        
-        // Populate rows -- hardcode shoppingList
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(clearList))
         
     }
     // Show many rows
@@ -43,12 +42,22 @@ class ViewController: UITableViewController {
             present(ac, animated: true)
         }
     
-    // This adds our grocery item to the list
-    func submit(_ answer: String) {
-        print(answer)
+    @objc func clearList() {
+        shoppingList.removeAll(keepingCapacity: true)
+        tableView.reloadData()
     }
     
-    // This presents our new item in the list...
+    // This adds our grocery item to the list
+    func submit(_ answer: String) {
+        // Add to our shoppingLiost
+        shoppingList.insert(answer, at: 0)
+
+        // This presents our new item in the list...
+        let indexPath = IndexPath(row: 0, section: 0)
+        tableView.insertRows(at: [indexPath], with: .automatic)
+    }
+    
+    
 
 }
 
