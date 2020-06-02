@@ -7,27 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FAD25F562483FA9C0068B356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD25F552483FA9C0068B356 /* AppDelegate.swift */; };
-		FAD25F582483FA9C0068B356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD25F572483FA9C0068B356 /* SceneDelegate.swift */; };
-		FAD25F5A2483FA9C0068B356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD25F592483FA9C0068B356 /* ViewController.swift */; };
-		FAD25F5D2483FA9C0068B356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD25F5B2483FA9C0068B356 /* Main.storyboard */; };
-		FAD25F5F2483FA9F0068B356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD25F5E2483FA9F0068B356 /* Assets.xcassets */; };
-		FAD25F622483FA9F0068B356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD25F602483FA9F0068B356 /* LaunchScreen.storyboard */; };
+		FAD25F762483FBAF0068B356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD25F752483FBAF0068B356 /* AppDelegate.swift */; };
+		FAD25F782483FBAF0068B356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD25F772483FBAF0068B356 /* SceneDelegate.swift */; };
+		FAD25F7A2483FBAF0068B356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD25F792483FBAF0068B356 /* ViewController.swift */; };
+		FAD25F7D2483FBAF0068B356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD25F7B2483FBAF0068B356 /* Main.storyboard */; };
+		FAD25F7F2483FBB10068B356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD25F7E2483FBB10068B356 /* Assets.xcassets */; };
+		FAD25F822483FBB10068B356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD25F802483FBB10068B356 /* LaunchScreen.storyboard */; };
+		FAD25F8D2483FBB10068B356 /* quizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD25F8C2483FBB10068B356 /* quizTests.swift */; };
+		FAD25F982483FBB10068B356 /* quizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD25F972483FBB10068B356 /* quizUITests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FAD25F892483FBB10068B356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD25F6A2483FBAF0068B356 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD25F712483FBAF0068B356;
+			remoteInfo = quiz;
+		};
+		FAD25F942483FBB10068B356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD25F6A2483FBAF0068B356 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD25F712483FBAF0068B356;
+			remoteInfo = quiz;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		FAD25F522483FA9C0068B356 /* quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAD25F552483FA9C0068B356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAD25F572483FA9C0068B356 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAD25F592483FA9C0068B356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAD25F5C2483FA9C0068B356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FAD25F5E2483FA9F0068B356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAD25F612483FA9F0068B356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FAD25F632483FA9F0068B356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD25F722483FBAF0068B356 /* quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD25F752483FBAF0068B356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAD25F772483FBAF0068B356 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAD25F792483FBAF0068B356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAD25F7C2483FBAF0068B356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAD25F7E2483FBB10068B356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAD25F812483FBB10068B356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAD25F832483FBB10068B356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD25F882483FBB10068B356 /* quizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD25F8C2483FBB10068B356 /* quizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizTests.swift; sourceTree = "<group>"; };
+		FAD25F8E2483FBB10068B356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD25F932483FBB10068B356 /* quizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD25F972483FBB10068B356 /* quizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizUITests.swift; sourceTree = "<group>"; };
+		FAD25F992483FBB10068B356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FAD25F4F2483FA9C0068B356 /* Frameworks */ = {
+		FAD25F6F2483FBAF0068B356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD25F852483FBB10068B356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD25F902483FBB10068B356 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,46 +76,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FAD25F492483FA9C0068B356 = {
+		FAD25F692483FBAF0068B356 = {
 			isa = PBXGroup;
 			children = (
-				FAD25F542483FA9C0068B356 /* quiz */,
-				FAD25F532483FA9C0068B356 /* Products */,
+				FAD25F742483FBAF0068B356 /* quiz */,
+				FAD25F8B2483FBB10068B356 /* quizTests */,
+				FAD25F962483FBB10068B356 /* quizUITests */,
+				FAD25F732483FBAF0068B356 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FAD25F532483FA9C0068B356 /* Products */ = {
+		FAD25F732483FBAF0068B356 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAD25F522483FA9C0068B356 /* quiz.app */,
+				FAD25F722483FBAF0068B356 /* quiz.app */,
+				FAD25F882483FBB10068B356 /* quizTests.xctest */,
+				FAD25F932483FBB10068B356 /* quizUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FAD25F542483FA9C0068B356 /* quiz */ = {
+		FAD25F742483FBAF0068B356 /* quiz */ = {
 			isa = PBXGroup;
 			children = (
-				FAD25F552483FA9C0068B356 /* AppDelegate.swift */,
-				FAD25F572483FA9C0068B356 /* SceneDelegate.swift */,
-				FAD25F592483FA9C0068B356 /* ViewController.swift */,
-				FAD25F5B2483FA9C0068B356 /* Main.storyboard */,
-				FAD25F5E2483FA9F0068B356 /* Assets.xcassets */,
-				FAD25F602483FA9F0068B356 /* LaunchScreen.storyboard */,
-				FAD25F632483FA9F0068B356 /* Info.plist */,
+				FAD25F752483FBAF0068B356 /* AppDelegate.swift */,
+				FAD25F772483FBAF0068B356 /* SceneDelegate.swift */,
+				FAD25F792483FBAF0068B356 /* ViewController.swift */,
+				FAD25F7B2483FBAF0068B356 /* Main.storyboard */,
+				FAD25F7E2483FBB10068B356 /* Assets.xcassets */,
+				FAD25F802483FBB10068B356 /* LaunchScreen.storyboard */,
+				FAD25F832483FBB10068B356 /* Info.plist */,
 			);
 			path = quiz;
+			sourceTree = "<group>";
+		};
+		FAD25F8B2483FBB10068B356 /* quizTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD25F8C2483FBB10068B356 /* quizTests.swift */,
+				FAD25F8E2483FBB10068B356 /* Info.plist */,
+			);
+			path = quizTests;
+			sourceTree = "<group>";
+		};
+		FAD25F962483FBB10068B356 /* quizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD25F972483FBB10068B356 /* quizUITests.swift */,
+				FAD25F992483FBB10068B356 /* Info.plist */,
+			);
+			path = quizUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FAD25F512483FA9C0068B356 /* quiz */ = {
+		FAD25F712483FBAF0068B356 /* quiz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAD25F662483FA9F0068B356 /* Build configuration list for PBXNativeTarget "quiz" */;
+			buildConfigurationList = FAD25F9C2483FBB10068B356 /* Build configuration list for PBXNativeTarget "quiz" */;
 			buildPhases = (
-				FAD25F4E2483FA9C0068B356 /* Sources */,
-				FAD25F4F2483FA9C0068B356 /* Frameworks */,
-				FAD25F502483FA9C0068B356 /* Resources */,
+				FAD25F6E2483FBAF0068B356 /* Sources */,
+				FAD25F6F2483FBAF0068B356 /* Frameworks */,
+				FAD25F702483FBAF0068B356 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +145,69 @@
 			);
 			name = quiz;
 			productName = quiz;
-			productReference = FAD25F522483FA9C0068B356 /* quiz.app */;
+			productReference = FAD25F722483FBAF0068B356 /* quiz.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FAD25F872483FBB10068B356 /* quizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD25F9F2483FBB10068B356 /* Build configuration list for PBXNativeTarget "quizTests" */;
+			buildPhases = (
+				FAD25F842483FBB10068B356 /* Sources */,
+				FAD25F852483FBB10068B356 /* Frameworks */,
+				FAD25F862483FBB10068B356 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD25F8A2483FBB10068B356 /* PBXTargetDependency */,
+			);
+			name = quizTests;
+			productName = quizTests;
+			productReference = FAD25F882483FBB10068B356 /* quizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAD25F922483FBB10068B356 /* quizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD25FA22483FBB10068B356 /* Build configuration list for PBXNativeTarget "quizUITests" */;
+			buildPhases = (
+				FAD25F8F2483FBB10068B356 /* Sources */,
+				FAD25F902483FBB10068B356 /* Frameworks */,
+				FAD25F912483FBB10068B356 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD25F952483FBB10068B356 /* PBXTargetDependency */,
+			);
+			name = quizUITests;
+			productName = quizUITests;
+			productReference = FAD25F932483FBB10068B356 /* quizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FAD25F4A2483FA9C0068B356 /* Project object */ = {
+		FAD25F6A2483FBAF0068B356 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Mr Steven A Weiss";
 				TargetAttributes = {
-					FAD25F512483FA9C0068B356 = {
+					FAD25F712483FBAF0068B356 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					FAD25F872483FBB10068B356 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = FAD25F712483FBAF0068B356;
+					};
+					FAD25F922483FBB10068B356 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = FAD25F712483FBAF0068B356;
 					};
 				};
 			};
-			buildConfigurationList = FAD25F4D2483FA9C0068B356 /* Build configuration list for PBXProject "quiz" */;
+			buildConfigurationList = FAD25F6D2483FBAF0068B356 /* Build configuration list for PBXProject "quiz" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +215,100 @@
 				en,
 				Base,
 			);
-			mainGroup = FAD25F492483FA9C0068B356;
-			productRefGroup = FAD25F532483FA9C0068B356 /* Products */;
+			mainGroup = FAD25F692483FBAF0068B356;
+			productRefGroup = FAD25F732483FBAF0068B356 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FAD25F512483FA9C0068B356 /* quiz */,
+				FAD25F712483FBAF0068B356 /* quiz */,
+				FAD25F872483FBB10068B356 /* quizTests */,
+				FAD25F922483FBB10068B356 /* quizUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FAD25F502483FA9C0068B356 /* Resources */ = {
+		FAD25F702483FBAF0068B356 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD25F622483FA9F0068B356 /* LaunchScreen.storyboard in Resources */,
-				FAD25F5F2483FA9F0068B356 /* Assets.xcassets in Resources */,
-				FAD25F5D2483FA9C0068B356 /* Main.storyboard in Resources */,
+				FAD25F822483FBB10068B356 /* LaunchScreen.storyboard in Resources */,
+				FAD25F7F2483FBB10068B356 /* Assets.xcassets in Resources */,
+				FAD25F7D2483FBAF0068B356 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD25F862483FBB10068B356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD25F912483FBB10068B356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FAD25F4E2483FA9C0068B356 /* Sources */ = {
+		FAD25F6E2483FBAF0068B356 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD25F5A2483FA9C0068B356 /* ViewController.swift in Sources */,
-				FAD25F562483FA9C0068B356 /* AppDelegate.swift in Sources */,
-				FAD25F582483FA9C0068B356 /* SceneDelegate.swift in Sources */,
+				FAD25F7A2483FBAF0068B356 /* ViewController.swift in Sources */,
+				FAD25F762483FBAF0068B356 /* AppDelegate.swift in Sources */,
+				FAD25F782483FBAF0068B356 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD25F842483FBB10068B356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD25F8D2483FBB10068B356 /* quizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD25F8F2483FBB10068B356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD25F982483FBB10068B356 /* quizUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FAD25F8A2483FBB10068B356 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD25F712483FBAF0068B356 /* quiz */;
+			targetProxy = FAD25F892483FBB10068B356 /* PBXContainerItemProxy */;
+		};
+		FAD25F952483FBB10068B356 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD25F712483FBAF0068B356 /* quiz */;
+			targetProxy = FAD25F942483FBB10068B356 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		FAD25F5B2483FA9C0068B356 /* Main.storyboard */ = {
+		FAD25F7B2483FBAF0068B356 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FAD25F5C2483FA9C0068B356 /* Base */,
+				FAD25F7C2483FBAF0068B356 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FAD25F602483FA9F0068B356 /* LaunchScreen.storyboard */ = {
+		FAD25F802483FBB10068B356 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FAD25F612483FA9F0068B356 /* Base */,
+				FAD25F812483FBB10068B356 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +316,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FAD25F642483FA9F0068B356 /* Debug */ = {
+		FAD25F9A2483FBB10068B356 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +376,7 @@
 			};
 			name = Debug;
 		};
-		FAD25F652483FA9F0068B356 /* Release */ = {
+		FAD25F9B2483FBB10068B356 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,10 +430,9 @@
 			};
 			name = Release;
 		};
-		FAD25F672483FA9F0068B356 /* Debug */ = {
+		FAD25F9D2483FBB10068B356 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K444UQT43;
 				INFOPLIST_FILE = quiz/Info.plist;
@@ -298,10 +447,9 @@
 			};
 			name = Debug;
 		};
-		FAD25F682483FA9F0068B356 /* Release */ = {
+		FAD25F9E2483FBB10068B356 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K444UQT43;
 				INFOPLIST_FILE = quiz/Info.plist;
@@ -316,28 +464,130 @@
 			};
 			name = Release;
 		};
+		FAD25FA02483FBB10068B356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K444UQT43;
+				INFOPLIST_FILE = quizTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mrstevenaweiss.me.quizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quiz.app/quiz";
+			};
+			name = Debug;
+		};
+		FAD25FA12483FBB10068B356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K444UQT43;
+				INFOPLIST_FILE = quizTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mrstevenaweiss.me.quizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quiz.app/quiz";
+			};
+			name = Release;
+		};
+		FAD25FA32483FBB10068B356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K444UQT43;
+				INFOPLIST_FILE = quizUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mrstevenaweiss.me.quizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = quiz;
+			};
+			name = Debug;
+		};
+		FAD25FA42483FBB10068B356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K444UQT43;
+				INFOPLIST_FILE = quizUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mrstevenaweiss.me.quizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = quiz;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAD25F4D2483FA9C0068B356 /* Build configuration list for PBXProject "quiz" */ = {
+		FAD25F6D2483FBAF0068B356 /* Build configuration list for PBXProject "quiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAD25F642483FA9F0068B356 /* Debug */,
-				FAD25F652483FA9F0068B356 /* Release */,
+				FAD25F9A2483FBB10068B356 /* Debug */,
+				FAD25F9B2483FBB10068B356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAD25F662483FA9F0068B356 /* Build configuration list for PBXNativeTarget "quiz" */ = {
+		FAD25F9C2483FBB10068B356 /* Build configuration list for PBXNativeTarget "quiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAD25F672483FA9F0068B356 /* Debug */,
-				FAD25F682483FA9F0068B356 /* Release */,
+				FAD25F9D2483FBB10068B356 /* Debug */,
+				FAD25F9E2483FBB10068B356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD25F9F2483FBB10068B356 /* Build configuration list for PBXNativeTarget "quizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD25FA02483FBB10068B356 /* Debug */,
+				FAD25FA12483FBB10068B356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD25FA22483FBB10068B356 /* Build configuration list for PBXNativeTarget "quizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD25FA32483FBB10068B356 /* Debug */,
+				FAD25FA42483FBB10068B356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FAD25F4A2483FA9C0068B356 /* Project object */;
+	rootObject = FAD25F6A2483FBAF0068B356 /* Project object */;
 }
