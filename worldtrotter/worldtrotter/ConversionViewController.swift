@@ -11,6 +11,7 @@ import UIKit
 class ConversionViewController: UIViewController {
     
     override func viewDidLoad() {
+        print("ConversionViewController loaded its view")
         
         let screenRect = UIScreen.main.bounds
         let screenWidth = screenRect.size.width
