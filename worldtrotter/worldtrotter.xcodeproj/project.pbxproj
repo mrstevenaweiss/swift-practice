@@ -51,6 +51,8 @@
 		FA83D3B424874CD000FB203E /* worldtrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worldtrotterUITests.swift; sourceTree = "<group>"; };
 		FA83D3B624874CD000FB203E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF0013C248F37F800526C6F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FAF0B50A2495C7E300EC0B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		FAF0B50B2495C82700EC0B00 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = FA83D38624874CCA00FB203E;
 			productRefGroup = FA83D39024874CCA00FB203E /* Products */;
@@ -305,6 +308,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				FA83D39924874CCA00FB203E /* Base */,
+				FAF0B50A2495C7E300EC0B00 /* en */,
+				FAF0B50B2495C82700EC0B00 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -384,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
