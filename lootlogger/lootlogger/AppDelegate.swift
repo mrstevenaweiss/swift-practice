@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  buggy
+//  lootlogger
 //
 //  Created by steven weiss on 6/15/20.
 //  Copyright © 2020 Mr Steven A Weiss. All rights reserved.
@@ -9,7 +9,6 @@
 import UIKit
 
 @UIApplicationMain
-
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

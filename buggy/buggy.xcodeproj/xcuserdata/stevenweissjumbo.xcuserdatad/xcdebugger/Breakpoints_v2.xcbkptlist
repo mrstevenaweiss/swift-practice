@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5B8A3758-CF25-43EE-A77D-BB5D4F2ED35C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "09829ECE-6623-4A27-A1ED-8D6BF63F6A79"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "badMethod"
+            moduleName = "">
+            <Locations>
+               <Location
+                  uuid = "09829ECE-6623-4A27-A1ED-8D6BF63F6A79 - a5a8296d20bcbf43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buggy.ViewController.badMethod() -&gt; ()"
+                  moduleName = "buggy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stevenweissjumbo/Desktop/Developer/swift-practice/buggy/buggy/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
