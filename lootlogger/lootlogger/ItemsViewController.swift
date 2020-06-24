@@ -4,13 +4,21 @@
 //
 //  Created by steven weiss on 6/15/20.
 //  Copyright © 2020 Mr Steven A Weiss. All rights reserved.
-//
 
 import UIKit
 
 class ItemsViewController: UITableViewController {
- 
+    
+    
     var itemStore: ItemStore!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//        tableView.rowHeight = 65
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 65
+    }
+    
     
     @IBAction func addNewItem(_ sender: UIButton) {
 //        // make a new index path for the 0th section, last row
@@ -54,12 +62,17 @@ class ItemsViewController: UITableViewController {
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
 //        let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
+        
         let item = itemStore.allItems[indexPath.row]
         
-        
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = "$\(item.valueInDollars)"
+//        cell.textLabel?.text = item.name
+//        cell.detailTextLabel?.text = "$\(item.valueInDollars)"
+
+        cell.nameLabel.text = item.name
+        cell.serialNumberLabel.text = item.serialNumber
+        cell.valueLabel.text = "\(item.valueInDollars)"
         
         return cell
     }
@@ -83,6 +96,25 @@ class ItemsViewController: UITableViewController {
                             to destinationIndexPath: IndexPath) {
         //update the model
         itemStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // if the triggered segue is the "showItem" segue
+        switch segue.identifier {
+            case "showItem":
+            // figure out which row was just tapped
+                if let row = tableView.indexPathForSelectedRow?.row {
+                    let item = itemStore.allItems[row]
+                    let detailViewController = segue.destination as! DetailViewController
+                    detailViewController.item = item
+            }
+        default:
+            preconditionFailure("Unexpected segue identifier")
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
     
 }
