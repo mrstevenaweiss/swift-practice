@@ -57,13 +57,5 @@ class DetailViewController: UIViewController {
         } else {
             item.valueInDollars = 0 
         }
-        
     }
-    
-    
-//        self.name = name
-//        self.serialNumber = serialNumber
-//        self.valueInDollars = valueInDollars
-//        self.dateCreated = Date()
-    
 }
