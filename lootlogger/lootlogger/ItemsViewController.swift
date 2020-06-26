@@ -20,7 +20,7 @@ class ItemsViewController: UITableViewController {
     }
     
     
-    @IBAction func addNewItem(_ sender: UIButton) {
+    @IBAction func addNewItem(_ sender: UIBarButtonItem) {
 //        // make a new index path for the 0th section, last row
 //        let lastRow = tableView.numberOfRows(inSection: 0)
 //        let indexPath = IndexPath(row: lastRow, section: 0)
