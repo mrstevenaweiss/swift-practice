@@ -44,5 +44,15 @@ class ItemStore {
         allItems.insert(movedItem, at: toIndex)
     }
     
+    func saveChanges() -> Bool {
+        do {
+            let encoder = PropertyListEncoder()
+//        let data = encoder.encode(allItems)
+            let data = try encoder.encode(allItems)
+        } catch let encodingError {
+            print("Error encoding allItems:\(encodingError)")
+        }
+        return false
+    }
     
 }

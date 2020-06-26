@@ -8,7 +8,8 @@
 
 import UIKit
 
-class Item: Equatable {
+class Item: Equatable, Codable {
+    
     var name: String
     var valueInDollars: Int
     var serialNumber: String?
@@ -47,4 +48,15 @@ class Item: Equatable {
             && lhs.valueInDollars == rhs.valueInDollars
             && lhs.dateCreated == rhs.dateCreated
     }
+    typealias Codable = Decodable & Encodable
+    
+//    protocol Encodable {
+//        func encode(to encoder: Encoder) throws
+//    }
+//    protocol Decodable {
+//        init(from decoder: Decoder) throws
+//    }
+
 }
+
+
