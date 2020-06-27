@@ -206,7 +206,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YV3-di-2GP">
-                                <rect key="frame" x="20" y="52" width="374" height="146.5"/>
+                                <rect key="frame" x="20" y="52" width="374" height="753"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="n8g-Oo-yfO">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -266,7 +266,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itd-Ld-rPE">
-                                        <rect key="frame" x="0.0" y="126" width="374" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="126" width="374" height="627"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -277,20 +277,23 @@
                                     <constraint firstItem="QTH-ba-S4a" firstAttribute="leading" secondItem="dh5-92-Fzj" secondAttribute="leading" id="oL7-jz-9iO"/>
                                 </constraints>
                             </stackView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="90A-YQ-Vyi">
-                                <rect key="frame" x="0.0" y="746" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2o-Fk-rbC">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="Item" id="5CI-6a-dKr"/>
+                                    <barButtonItem title="Item" id="kjJ-Qc-yfK"/>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="apu-a2-cax" firstAttribute="bottom" secondItem="i2o-Fk-rbC" secondAttribute="bottom" id="7Ij-bF-sgD"/>
+                            <constraint firstItem="i2o-Fk-rbC" firstAttribute="leading" secondItem="Wgs-od-UUp" secondAttribute="leading" id="8hc-CP-M4P"/>
                             <constraint firstItem="apu-a2-cax" firstAttribute="trailing" secondItem="YV3-di-2GP" secondAttribute="trailing" constant="20" id="Fx4-hi-8q7"/>
+                            <constraint firstItem="i2o-Fk-rbC" firstAttribute="top" secondItem="YV3-di-2GP" secondAttribute="bottom" constant="8" id="HBl-Ba-kvn"/>
                             <constraint firstItem="YV3-di-2GP" firstAttribute="leading" secondItem="apu-a2-cax" secondAttribute="leading" constant="20" id="Uhh-GV-dnX"/>
                             <constraint firstItem="YV3-di-2GP" firstAttribute="top" secondItem="apu-a2-cax" secondAttribute="top" constant="8" id="VD9-nD-42S"/>
+                            <constraint firstAttribute="trailing" secondItem="i2o-Fk-rbC" secondAttribute="trailing" id="szY-vo-5iQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="apu-a2-cax"/>
                     </view>
