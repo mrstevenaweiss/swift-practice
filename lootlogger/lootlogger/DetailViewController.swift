@@ -9,36 +9,10 @@
 import UIKit
 
 class DetailViewController: UIViewController, UITextFieldDelegate {
-    
     @IBOutlet var nameField: UITextField!
     @IBOutlet var serialField: UITextField!
     @IBOutlet var valueField: UITextField!
     @IBOutlet var dateLabel: UILabel!
-    
-    
-    
-//    @IBAction func choosePhotoSource(_ sender: UIBarButtonItem) {
-//        print("yo")
-//        
-//        let alertContoller = UIAlertController(title: nil,
-//                                               message: nil,
-//                                               preferredStyle: .actionSheet)
-//        
-//        let cameraAction = UIAlertAction(title: "Camera", style: .default) { _ in
-//            print("Present Camera")
-//        }
-//        alertContoller.addAction(cameraAction)
-//        
-//        let photoLibaryAction = UIAlertAction(title: "Photo Library", style: .default){ _ in
-//            print("Present photo library")
-//        }
-//        alertContoller.addAction(photoLibaryAction)
-//        
-//        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-//        alertContoller.addAction(cancelAction)
-//        
-//        present(alertContoller, animated: true, completion: nil)
-//    }
     
     var item: Item! {
         didSet {
@@ -46,9 +20,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
-        view.endEditing(true)
-    }
+
     
     let numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
@@ -79,7 +51,6 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
         view.endEditing(true)
         
         item.name = nameField.text ?? ""
@@ -96,6 +67,33 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    @IBAction func choosePhotoSource(_ sender: UIBarButtonItem) {
+        let alertController = UIAlertController(title: nil,
+                                                message: nil,
+                                                preferredStyle: .actionSheet)
+        
+        let cameraAction = UIAlertAction(title: "Camera", style: .default) {
+            _ in print("Present Camera")
+        }
+        alertController.addAction(cameraAction)
+        
+        let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default) {
+            _ in print("Present photo library")
+        }
+        alertController.addAction(photoLibraryAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
+        
     }
     
 }
