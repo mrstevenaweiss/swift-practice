@@ -45,10 +45,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         
         nameField.text = item.name
         serialField.text = item.serialNumber
-//        valueField.text = "\(item.valueInDollars)"
-//        dateLabel.text = "\(item.dateCreated)"
         valueField.text = numberFormatter.string(from: NSNumber(value: item.valueInDollars))
         dateLabel.text = dateFormatter.string(from: item.dateCreated)
+        
+        let key = item.itemKey
+        
+        let imageToDisplay = imageStore.image(forKey: key)
+        imageView.image = imageToDisplay 
         
     }
     override func viewWillDisappear(_ animated: Bool) {
