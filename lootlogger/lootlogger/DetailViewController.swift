@@ -94,7 +94,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
             _ in
             let imagePicker = self.imagePicker(for: .photoLibrary)
             imagePicker.modalPresentationStyle = .popover
-            imagePicker.popoverPresentationController?.barButtonItem = sender 
+            imagePicker.popoverPresentationController?.barButtonItem = sender
             self.present(imagePicker, animated: true, completion: nil)
         }
         alertController.addAction(photoLibraryAction)
@@ -109,6 +109,12 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         imagePicker.sourceType = sourceType
         imagePicker.delegate = self
         return imagePicker
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.originalImage] as! UIImage
+        imageView.image = image
+        dismiss(animated: true, completion: nil)
     }
     
     
