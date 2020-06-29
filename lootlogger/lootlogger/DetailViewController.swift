@@ -8,19 +8,19 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, UITextFieldDelegate {
+class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
     @IBOutlet var nameField: UITextField!
     @IBOutlet var serialField: UITextField!
     @IBOutlet var valueField: UITextField!
     @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var imageView: UIImageView!
     
     var item: Item! {
         didSet {
             navigationItem.title = item.name 
         }
     }
-    
-
     
     let numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
@@ -81,13 +81,21 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         alertController.modalPresentationStyle = .popover
         alertController.popoverPresentationController?.barButtonItem = sender
         
-        let cameraAction = UIAlertAction(title: "Camera", style: .default) {
-            _ in print("Present Camera")
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let cameraAction = UIAlertAction(title: "Camera", style: .default) {
+            _ in
+                let imagePicker = self.imagePicker(for: .camera)
+                self.present(imagePicker, animated: true, completion: nil)
+            }
+            alertController.addAction(cameraAction)
         }
-        alertController.addAction(cameraAction)
         
         let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default) {
-            _ in print("Present photo library")
+            _ in
+            let imagePicker = self.imagePicker(for: .photoLibrary)
+            imagePicker.modalPresentationStyle = .popover
+            imagePicker.popoverPresentationController?.barButtonItem = sender 
+            self.present(imagePicker, animated: true, completion: nil)
         }
         alertController.addAction(photoLibraryAction)
         
@@ -95,8 +103,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         alertController.addAction(cancelAction)
         
         present(alertController, animated: true, completion: nil)
-        
-        
     }
+    func imagePicker(for sourceType: UIImagePickerController.SourceType) -> UIImagePickerController {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = sourceType
+        imagePicker.delegate = self
+        return imagePicker
+    }
+    
     
 }

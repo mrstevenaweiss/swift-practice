@@ -190,6 +190,7 @@
                     <navigationItem key="navigationItem" id="rkY-e2-55U"/>
                     <connections>
                         <outlet property="dateLabel" destination="96U-B3-189" id="uSb-xL-q0X"/>
+                        <outlet property="imageView" destination="AcW-k8-gkb" id="GI9-Zd-YG3"/>
                         <outlet property="nameField" destination="Ofs-cQ-k6d" id="uha-du-gCX"/>
                         <outlet property="serialField" destination="xBZ-aM-mmv" id="A8G-Rx-igy"/>
                         <outlet property="valueField" destination="JoH-EE-ozO" id="tzJ-w7-E7p"/>
@@ -220,7 +221,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7e-Eg-vYe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.739130434782609" y="32.8125"/>
+            <point key="canvasLocation" x="212" y="33"/>
         </scene>
     </scenes>
 </document>
