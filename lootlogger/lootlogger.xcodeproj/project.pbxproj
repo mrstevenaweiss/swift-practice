@@ -19,6 +19,7 @@
 		FA2610E8249869360080D6BB /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2610E7249869360080D6BB /* ItemsViewController.swift */; };
 		FA2610EA249869F40080D6BB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2610E9249869F40080D6BB /* Item.swift */; };
 		FA2610EC249AFF860080D6BB /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2610EB249AFF860080D6BB /* ItemStore.swift */; };
+		FA5BE07924A970B100C394E0 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BE07824A970B100C394E0 /* ImageStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FA2610E7249869360080D6BB /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		FA2610E9249869F40080D6BB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		FA2610EB249AFF860080D6BB /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		FA5BE07824A970B100C394E0 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +109,15 @@
 		FA2610B6249868C30080D6BB /* lootlogger */ = {
 			isa = PBXGroup;
 			children = (
-				FA2610E7249869360080D6BB /* ItemsViewController.swift */,
+				FA5BE07824A970B100C394E0 /* ImageStore.swift */,
 				FA1D31D0249E6A870039FD88 /* DetailViewController.swift */,
-				FA2610E9249869F40080D6BB /* Item.swift */,
+				FA2610E7249869360080D6BB /* ItemsViewController.swift */,
 				FA2610EB249AFF860080D6BB /* ItemStore.swift */,
+				FA2610E9249869F40080D6BB /* Item.swift */,
+				FA1D31CE249E4D260039FD88 /* ItemCell.swift */,
 				FA2610B7249868C30080D6BB /* AppDelegate.swift */,
 				FA2610B9249868C30080D6BB /* SceneDelegate.swift */,
 				FA2610BD249868C30080D6BB /* Main.storyboard */,
-				FA1D31CE249E4D260039FD88 /* ItemCell.swift */,
 				FA2610C0249868C60080D6BB /* Assets.xcassets */,
 				FA2610C2249868C60080D6BB /* LaunchScreen.storyboard */,
 				FA2610C5249868C60080D6BB /* Info.plist */,
@@ -274,6 +277,7 @@
 				FA2610EA249869F40080D6BB /* Item.swift in Sources */,
 				FA2610E8249869360080D6BB /* ItemsViewController.swift in Sources */,
 				FA1D31CF249E4D260039FD88 /* ItemCell.swift in Sources */,
+				FA5BE07924A970B100C394E0 /* ImageStore.swift in Sources */,
 				FA2610B8249868C30080D6BB /* AppDelegate.swift in Sources */,
 				FA2610EC249AFF860080D6BB /* ItemStore.swift in Sources */,
 				FA2610BA249868C30080D6BB /* SceneDelegate.swift in Sources */,
