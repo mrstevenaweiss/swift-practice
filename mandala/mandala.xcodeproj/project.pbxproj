@@ -19,6 +19,7 @@
 		FA69CD3724AC1E2A0050D6D0 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69CD3624AC1E2A0050D6D0 /* MoodEntry.swift */; };
 		FA69CD3B24AC239A0050D6D0 /* UIColor+Mandala.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69CD3A24AC239A0050D6D0 /* UIColor+Mandala.swift */; };
 		FA69CD3D24AC244C0050D6D0 /* UIImage+Mandala.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69CD3C24AC244C0050D6D0 /* UIImage+Mandala.swift */; };
+		FAE8200724AECE5C007F05E1 /* MoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8200624AECE5C007F05E1 /* MoodListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FA69CD3624AC1E2A0050D6D0 /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
 		FA69CD3A24AC239A0050D6D0 /* UIColor+Mandala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Mandala.swift"; sourceTree = "<group>"; };
 		FA69CD3C24AC244C0050D6D0 /* UIImage+Mandala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Mandala.swift"; sourceTree = "<group>"; };
+		FAE8200624AECE5C007F05E1 /* MoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		FA69CD0324AC1D680050D6D0 /* mandala */ = {
 			isa = PBXGroup;
 			children = (
+				FAE8200624AECE5C007F05E1 /* MoodListViewController.swift */,
 				FA69CD0424AC1D680050D6D0 /* AppDelegate.swift */,
 				FA69CD0624AC1D680050D6D0 /* SceneDelegate.swift */,
 				FA69CD0824AC1D680050D6D0 /* MoodSelectionViewController.swift */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA69CD3524AC1DF50050D6D0 /* Mood.swift in Sources */,
+				FAE8200724AECE5C007F05E1 /* MoodListViewController.swift in Sources */,
 				FA69CD0924AC1D680050D6D0 /* MoodSelectionViewController.swift in Sources */,
 				FA69CD3724AC1E2A0050D6D0 /* MoodEntry.swift in Sources */,
 				FA69CD0524AC1D680050D6D0 /* AppDelegate.swift in Sources */,
