@@ -75,5 +75,8 @@ class ImageSelector: UIControl {
             preconditionFailure("The buttons and images are not parallel.")
         }
         selectedIndex = buttonIndex
+        sendActions(for: .valueChanged)
     }
+    
+    
 }
